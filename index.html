@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section class="mt-5">
+            <div class="container">
+                <div class="mackbook-body py-4 border-bottom mb-2">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mackbook-body-left">
+                                <img class="img-fluid" src="images/mac.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mackbook-body-right">
+                                <div class="mackbook-configure">
+                                    <h2 class="fs-1 fw-bolder pb-2 lh-base">Customize your Blue 24 - inch iMac with Apple M1 chip
+                                    </h2>
+                                    <p class="fs-6 fw-normal text-dark">Apple M1 chip with 8 core cpu with 4 performance cores and 4 effeciency cores , 7 core gpu , and 16 core neural engine 8 gb unfied memory 256 gb ssd storage 2 thunderbolt / usb 4 ports magic mouse magic keyboard us
+                                        english .
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <h4>Memory</h4>
+
+                                        <button id="doka" type="button" class="btn btn-outline-dark">8GB unified memory</button>
+                                        <button id="voka" type="button" class="btn btn-outline-dark">16GB unified memory</button>
+                                    </div>
+
+
+                                    <div class="mt-4">
+                                        <h4>Storege</h4>
+                                        <button id="sona" type="button" class="btn btn-outline-dark">256GB SSD storege</button>
+                                        <button id="mona" type="button" class="btn btn-outline-dark">512GB SSD storege</button>
+                                        <button id="kona" type="button" class="btn btn-outline-dark">1TB SSD storege</button> </div>
+                                    <div class="mt-4">
+                                        <h4>chose your delevery option</h4>
+                                        <button id="nika" type="button" class="btn btn-outline-dark">Friday,Aug 25 Free Prime Delevery</button>
+                                        <button id="fika" type="button" class="btn btn-outline-dark">Friday,Aug 21 Delevery  charge $20</button>
+                                    </div>
+                                </div>
+                                <div class="mackbook-price-update mt-5">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="mackbook-inner-box py-3 border-bottom">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <h4 class="price-text">Best Price</h4>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <h4 class="price-text text-center">$<span id="rop">1299</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mackbook-inner-box py-3 border-bottom">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <h4 class="price-text">Extra Memory cost</h4>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <h4 class="price-text text-center">$<span id="cobi">0</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mackbook-inner-box py-3 border-bottom">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <h4 class="price-text">Extra storage cost</h4>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <h4 class="price-text text-center">$<span id="cop">0</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mackbook-inner-box py-3 bold-border">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <h4 class="price-text">Delivery Charge</h4>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <h4 class="price-text text-center">$<span id="pop">0</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mackbook-inner-box border-bottom py-3">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <h4 class="price-text ">Total Price</h4>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <h4 class="price-text text-center">$<span id="total">1299</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="promo-code mt-3">
+                                                <h4 class="price-text mb-3">Add promo code</h4>
+                                                <p id="error"></p>
+                                                <div class="d-flex">
+                                                    <input type="text" id="promo-value">
+                                                    <button class="btn btn-danger" id="promo-btn">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promo-apply-afte-total pb-2">
+            <h2 class="fs-1 text-center">Total : $<span id="coupon-total">1299</span></h2>
+        </section>
+    </main>
+
+    <!-- main section end  -->
+
+    <!-- footer section start -->
+
+    <footer>
+        <p class="text-center">&copy;All right reserved mack-book 2021 || tarikul tuhin</p>
+    </footer>
+
+    <!-- footer section end -->
+
+
+    <!-- custom javascript link  -->
+    <script src="./monitor.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
